@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'Policy Insights Pro',
-  description: 'מנתח פוליסות ביטוח ומסמכים רפואיים באמצעות בינה מלאכותית',
+  description: 'מנתח פוליסות ביטוח ומסמכים רפואיים באמצעות בינה מלאכותית - חסוך זמן והפחת סיכונים.',
 };
 
 export default function RootLayout({
@@ -27,9 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="he" dir="rtl">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen bg-background`}>
         <Header />
-        <main className="flex-grow container mx-auto px-4 py-8">
+        <main className="flex-grow">
           {children}
         </main>
         <Footer />
