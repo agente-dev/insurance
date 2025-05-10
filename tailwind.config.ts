@@ -8,6 +8,10 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      // Padding will continue to be handled by utility classes like px-4, md:px-6 in individual components
+    },
   	extend: {
   		colors: {
   			background: 'hsl(var(--background))',

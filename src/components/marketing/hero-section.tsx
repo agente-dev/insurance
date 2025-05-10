@@ -15,11 +15,11 @@ export function HeroSection() {
       {/* Background Image and Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://picsum.photos/seed/dashboardUI/1200/800" // Using existing seed, adjusted dimensions for background
+          src="/images/insure-tech-background-image.png" // Using existing seed, adjusted dimensions for background
           alt="רקע טכנולוגי מופשט"
           layout="fill"
           objectFit="cover"
-          className="opacity-30" // Lower opacity for background effect
+          className="opacity-90" // Lower opacity for background effect
           data-ai-hint="abstract technology" // Updated hint
           priority
         />
