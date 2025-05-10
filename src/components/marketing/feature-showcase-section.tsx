@@ -36,7 +36,7 @@ export function FeatureShowcaseSection() {
       <div className="container px-4 md:px-6">
         <div className="text-center max-w-2xl mx-auto mb-10 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">
-            גלה את העוצמה של Policy Insights Pro
+            גלה את העוצמה של ClearClaim
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
             יכולות מתקדמות המתוכננות לייעל את תהליכי העבודה שלך ולהעניק לך שקט נפשי.
@@ -45,7 +45,7 @@ export function FeatureShowcaseSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {features.map((feature, index) => (
-            <Card key={index} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fadeIn" style={{ animationDelay: `${index * 150}ms` }}>
+            <Card key={feature.title} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fadeIn" style={{ animationDelay: `${index * 150}ms` }}>
               <div className="relative h-56 w-full">
                 <Image
                   src={feature.imageSrc}

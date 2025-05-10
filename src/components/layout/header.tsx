@@ -8,7 +8,7 @@ export function Header() {
         <Link href="/" className="flex items-center space-x-2 rtl:space-x-reverse">
           <AppLogo className="h-8 w-8 text-primary" />
           <span className="text-xl font-bold text-primary">
-            Policy Insights Pro
+            ClearClaim
           </span>
         </Link>
       </div>

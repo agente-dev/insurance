@@ -24,7 +24,7 @@ export function HeroSection() {
           priority
         />
         {/* Dark overlay for text contrast */}
-        <div className="absolute inset-0 bg-primary/60 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-primary/60 mix-blend-multiply" />
       </div>
 
       {/* Content */}
@@ -34,11 +34,11 @@ export function HeroSection() {
             מזרזים החלטות ביטוחיות עם ניתוח רפואי אוטומטי
           </h1>
           <p className="text-lg md:text-xl text-gray-200">
-            Policy Insights Pro ממנפת בינה מלאכותית מתקדמת כדי להפוך מסמכים רפואיים מורכבים לתובנות ברורות ופעולה, וחוסכת לך זמן יקר ומפחיתה סיכונים.
+            ClearClaim ממנפת בינה מלאכותית מתקדמת כדי להפוך מסמכים רפואיים מורכבים לתובנות ברורות ופעולה, וחוסכת לך זמן יקר ומפחיתה סיכונים.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-lg shadow-lg bg-accent hover:bg-accent/90 text-accent-foreground" asChild>
-              <a href="mailto:leon@agente.dev?subject=בקשה%20להדגמה%20אישית%20-%20Policy%20Insights%20Pro">
+              <a href="mailto:leon@agente.dev?subject=בקשה%20להדגמה%20אישית%20-%20ClearClaim">
                 קבל הדגמה אישית
               </a>
             </Button>

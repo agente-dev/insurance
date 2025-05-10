@@ -50,8 +50,8 @@ export function ProblemSolutionSection() {
             </CardHeader>
             <CardContent className="text-lg text-muted-foreground flex-grow"> {/* Added flex-grow */}
               <ul className="space-y-4">
-                {problemPoints.map((point, index) => (
-                  <li key={index} className="flex items-start gap-3">
+                {problemPoints.map((point) => (
+                  <li key={point.text} className="flex items-start gap-3">
                     <point.icon className="h-6 w-6 shrink-0 mt-1 text-destructive/80" aria-hidden="true" />
                     <span>{point.text}</span>
                   </li>
@@ -65,14 +65,14 @@ export function ProblemSolutionSection() {
               <CardTitle className="text-2xl md:text-3xl font-semibold text-primary">
                  <div className="flex items-baseline gap-3">
                   <CheckCircle2 className="h-8 w-8 shrink-0" />
-                  <span>הפתרון: Policy Insights Pro</span>
+                  <span>הפתרון: ClearClaim</span>
                 </div>
               </CardTitle>
             </CardHeader>
             <CardContent className="text-lg text-foreground flex-grow"> {/* Added flex-grow */}
               <ul className="space-y-4">
-                {solutionPoints.map((point, index) => (
-                  <li key={index} className="flex items-start gap-3">
+                {solutionPoints.map((point) => (
+                  <li key={point.text} className="flex items-start gap-3">
                     <point.icon className="h-6 w-6 shrink-0 mt-1 text-primary/80" aria-hidden="true" />
                     <span>{point.text}</span>
                   </li>

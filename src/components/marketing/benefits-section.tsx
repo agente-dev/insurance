@@ -40,13 +40,13 @@ export function BenefitsSection() {
             תועלות מרכזיות שישנו את זרימת העבודה שלך
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            גלה כיצד Policy Insights Pro מעניקה לך יתרון תחרותי ומניעה צמיחה.
+            גלה כיצד ClearClaim מעניקה לך יתרון תחרותי ומניעה צמיחה.
           </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {benefits.map((benefit, index) => (
-            <Card key={index} className="shadow-md hover:shadow-lg transition-shadow duration-300 animate-fadeIn" style={{ animationDelay: `${index * 150}ms` }}>
+            <Card key={benefit.title} className="shadow-md hover:shadow-lg transition-shadow duration-300 animate-fadeIn" style={{ animationDelay: `${index * 150}ms` }}>
               <CardHeader className="flex flex-row items-center gap-4 pb-2">
                 <div className="p-3 rounded-full bg-accent/10 text-accent">
                   <benefit.icon className="h-6 w-6" />

@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Policy Insights Pro',
-  description: 'מנתח פוליסות ביטוח ומסמכים רפואיים באמצעות בינה מלאכותית - חסוך זמן והפחת סיכונים.',
+  title: 'ClearClaim',
+  description: 'ClearClaim מנתח מסמכים רפואיים ומפיק תובנות לתביעות ביטוח באמצעות בינה מלאכותית, חוסך זמן ומפחית סיכונים.',
 };
 
 export default function RootLayout({
