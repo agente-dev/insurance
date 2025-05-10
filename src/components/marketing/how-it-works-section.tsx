@@ -1,7 +1,8 @@
+// src/components/marketing/how-it-works-section.tsx
 'use client';
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { UploadCloud, BrainCircuit, FileText, ArrowRightCircle } from 'lucide-react';
+import { UploadCloud, BrainCircuit, FileText, ArrowLeftCircle } from 'lucide-react'; // Changed ArrowRightCircle to ArrowLeftCircle
 
 const steps = [
   {
@@ -56,7 +57,7 @@ export function HowItWorksSection() {
           ))}
         </div>
         <div className="text-center mt-12">
-            <ArrowRightCircle className="h-12 w-12 text-accent mx-auto animate-pulse" />
+            <ArrowLeftCircle className="h-12 w-12 text-accent mx-auto animate-pulse" /> {/* Changed icon to ArrowLeftCircle */}
             <p className="mt-2 text-muted-foreground">מוביל לתובנות עסקיות חכמות יותר.</p>
         </div>
       </div>

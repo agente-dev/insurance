@@ -1,7 +1,8 @@
+// src/components/marketing/problem-solution-section.tsx
 'use client';
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { XCircle, CheckCircle2 } from 'lucide-react';
+import { XCircle, CheckCircle2, AlertTriangle, Zap } from 'lucide-react'; // Example icons
 
 export function ProblemSolutionSection() {
   return (
@@ -10,9 +11,11 @@ export function ProblemSolutionSection() {
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-start">
           <Card className="shadow-lg animate-fadeIn">
             <CardHeader>
-              <CardTitle className="text-2xl md:text-3xl font-semibold text-destructive flex items-center gap-2">
-                <XCircle className="h-8 w-8" />
-                האתגר: הצפת מידע ובדיקות ידניות
+              <CardTitle className="text-2xl md:text-3xl font-semibold text-destructive">
+                <div className="flex items-baseline gap-3"> {/* Changed to items-baseline and increased gap for visual balance */}
+                  <XCircle className="h-8 w-8 shrink-0" /> {/* Matched icon size */}
+                  <span>האתגר: הצפת מידע ובדיקות ידניות</span>
+                </div>
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-3 text-lg text-muted-foreground">
@@ -24,9 +27,11 @@ export function ProblemSolutionSection() {
 
           <Card className="shadow-lg animate-fadeIn [animation-delay:200ms]">
             <CardHeader>
-              <CardTitle className="text-2xl md:text-3xl font-semibold text-primary flex items-center gap-2">
-                <CheckCircle2 className="h-8 w-8" />
-                הפתרון: Policy Insights Pro
+              <CardTitle className="text-2xl md:text-3xl font-semibold text-primary">
+                 <div className="flex items-baseline gap-3"> {/* Changed to items-baseline and increased gap */}
+                  <CheckCircle2 className="h-8 w-8 shrink-0" /> {/* Matched icon size */}
+                  <span>הפתרון: Policy Insights Pro</span>
+                </div>
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-3 text-lg text-foreground">

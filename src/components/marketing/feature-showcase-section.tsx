@@ -1,7 +1,8 @@
+// src/components/marketing/feature-showcase-section.tsx
 'use client';
 
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+// Button removed as CardFooter is removed
 import Image from 'next/image';
 import { Layers, ScanText, FileCheck2 } from 'lucide-react';
 
@@ -10,21 +11,21 @@ const features = [
     icon: ScanText,
     title: 'ניתוח מסמכים חכם',
     description: 'המערכת שלנו מפענחת מגוון רחב של מסמכים רפואיים, כולל PDF, סריקות ותמונות, ומפיקה מהם מידע קריטי באופן אוטומטי ומדויק.',
-    imageSrc: "https://picsum.photos/seed/feature1/600/400",
+    imageSrc: "https://picsum.photos/seed/docsAI/600/400", // Updated seed for potentially more relevant image
     imageHint: "document analysis",
   },
   {
     icon: Layers,
     title: 'זיהוי התנגשויות מתקדם',
     description: 'אלגוריתמי AI מתקדמים מצליבים את המידע הרפואי עם תנאי הפוליסה ומאתרים אי-התאמות, חריגות או סיכונים פוטנציאליים באופן מיידי.',
-    imageSrc: "https://picsum.photos/seed/feature2/600/400",
+    imageSrc: "https://picsum.photos/seed/conflictAI/600/400", // Updated seed
     imageHint: "data comparison",
   },
   {
     icon: FileCheck2,
     title: 'דוחות תובנות מותאמים',
     description: 'קבלו דוחות ברורים, תמציתיים וויזואליים המסכמים את הממצאים העיקריים, מותאמים לצרכים הספציפיים של חברת הביטוח שלכם.',
-    imageSrc: "https://picsum.photos/seed/feature3/600/400",
+    imageSrc: "https://picsum.photos/seed/reportAI/600/400", // Updated seed
     imageHint: "report generation",
   },
 ];
@@ -61,15 +62,12 @@ export function FeatureShowcaseSection() {
                     </div>
                     <CardTitle className="text-xl font-semibold">{feature.title}</CardTitle>
                 </div>
-                <CardDescription className="text-base leading-relaxed h-24 overflow-hidden">
+                {/* Ensure CardDescription has enough height or use min-h- if text length varies a lot */}
+                <CardDescription className="text-base leading-relaxed min-h-[6rem]"> 
                   {feature.description}
                 </CardDescription>
               </CardHeader>
-              <CardFooter className="mt-auto">
-                <Button variant="link" className="p-0 text-primary">
-                  קרא עוד <span aria-hidden="true" className="rtl:mr-1 ltr:ml-1">&rarr;</span>
-                </Button>
-              </CardFooter>
+              {/* CardFooter removed */}
             </Card>
           ))}
         </div>

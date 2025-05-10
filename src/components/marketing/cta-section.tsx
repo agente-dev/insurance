@@ -1,3 +1,4 @@
+// src/components/marketing/cta-section.tsx
 'use client';
 
 import { Button } from '@/components/ui/button';
@@ -16,7 +17,7 @@ export function CtaSection() {
           </p>
           <div className="mt-8">
             <Button size="lg" variant="secondary" className="text-lg shadow-lg bg-background text-primary hover:bg-background/90" asChild>
-               <a href="mailto:contact@policyinsightspro.example.com?subject=בקשה%20להדגמה%20-%20Policy%20Insights%20Pro">
+               <a href="mailto:leon@agente.dev?subject=בקשה%20להדגמה%20-%20Policy%20Insights%20Pro">
                 <Mail className="ltr:mr-2 rtl:ml-2 h-5 w-5" />
                 צרו קשר להדגמה
               </a>

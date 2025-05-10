@@ -1,3 +1,4 @@
+// src/components/marketing/hero-section.tsx
 'use client';
 
 import { Button } from '@/components/ui/button';
@@ -16,7 +17,7 @@ export function HeroSection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-lg shadow-lg hover:bg-primary/90" asChild>
-              <a href="mailto:contact@policyinsightspro.example.com?subject=בקשה%20להדגמה%20אישית%20-%20Policy%20Insights%20Pro">
+              <a href="mailto:leon@agente.dev?subject=בקשה%20להדגמה%20אישית%20-%20Policy%20Insights%20Pro">
                 קבל הדגמה אישית
               </a>
             </Button>
@@ -27,7 +28,7 @@ export function HeroSection() {
         </div>
         <div className="mt-12 md:mt-16 max-w-4xl mx-auto">
           <Image
-            src="https://picsum.photos/1200/600"
+            src="https://picsum.photos/seed/dashboardUI/1200/600" // Changed seed for variety
             alt="ממשק Policy Insights Pro - דוגמה"
             width={1200}
             height={600}
