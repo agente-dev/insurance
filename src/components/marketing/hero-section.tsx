@@ -42,7 +42,7 @@ export function HeroSection() {
                 קבל הדגמה אישית
               </a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="text-lg shadow-sm text-white border-gray-300 hover:bg-white/10 hover:text-white">
+            <Button asChild size="lg" className="text-lg shadow-sm text-white border border-white bg-black/20 hover:bg-white hover:text-primary">
               <a href="#problem-solution-section">
                 למד עוד
               </a>
@@ -53,3 +53,4 @@ export function HeroSection() {
     </section>
   );
 }
+
